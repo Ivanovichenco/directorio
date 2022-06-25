@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Directorio Web</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Construido siguiendo en parte el tutorial Programación Web de Juán Sebastián Cárdenas en Youtube-->
+  <!-- Usando el framework css Bulma y javascript puro -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header>
+    <!-- Clase navbar con color verde is-success -->
+    <nav class="navbar has-background-grey-lighter is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">DIRECTORIO WEB JAVASCRIPT SIN PERSISTENCIA DE DATOS by<strong>: Ivanovichenco</strong></div>
+      </div>
+    </nav>
+  </header>
+  <main class="hero has-background-danger-light">
+
+    <div class="container ">
+
+      <div class="section">
+        <h1 class="title mgt-large">
+          DIRECTORIO WEB
+        </h1>
+        <!--  -->
+        <div class="columns">
+          <!-- Primera Columna formada por 4 columans  ------------------------->
+          <div class="hero has-background-warning-light column is-4">
+            <section class="section">
+
+
+              <form class="" action="#" method="post">
+                <div class="field">
+                  <label class="label" for="nombre">Nombre</label>
+                  <div class="control">
+                    <input class="input" type="text" name="nombre" id="nombre">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="tipo">Tipo de Documento</label>
+                  <select class="select" name="tipo" id="tipo">
+                    <option value="-1">Seleccione</option>
+                    <option value="ti">Tarjeta Identidad</option>
+                    <option value="cc">Cëdula</option>
+                    <option value="ce">Cédula Extranjeria</option>
+                  </select>
+
+                </div>
+
+                <div class="field">
+                  <label class="label" for="documento">No. Documento</label>
+                  <div class="control">
+                    <input class="input" type="text" name="documento" id="documento">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="">Dirección</label>
+                  <div class="control">
+                    <input class="input" type="text" name="direccion" id="direccion">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="telefono">Teléfono</label>
+                  <div class="control">
+                    <input class="input" type="text" name="telefono" id="telefono">
+                  </div>
+                </div>
+               
+
+                <button onclick="agregarPersona(this.form)" class="button is-info" type="button">Agregar</button>
+              </form>
+            </section>
+          </div>
+          <!--------- Segunda columna formada por 8 columnas --------------------------------------------------->
+          <div class="column is-bordered hero has-background-warning-lightt is-fullwidth is-8">
+            <section class="section">
+              <table class="table">
+                <thead class="thead">
+                  <th>Nombre</th>
+                  <th>Tipo Documento</th>
+                  <th>No. Documento</th>
+                  <th>Dirección</th>
+                  <th>Teléfono</th>
+                  <th>--</th>
+                </thead>
+                <tbody id="datos">
+
+
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+        <!-- Clase principal container -->
+
+        </section>
+
+      </div>
+  </main>
+  <footer class="footer is-success">
+    <div class="content has-text-centered is-success">
+      <p>
+        <strong>DIRECTORIO WEB</strong> by <a href="">Ivanovichenco</a> 
+        
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
